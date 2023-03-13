@@ -9,7 +9,7 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/tinhtoan", (req, res) => {
+app.post("/", (req, res) => {
   console.log(req.body);
   const soA = Number(req.body.soA);
   const soB = Number(req.body.soB);
